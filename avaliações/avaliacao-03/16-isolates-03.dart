@@ -19,6 +19,6 @@ void main() async {
 
 void doAsyncOperation(SendPort sendPort) async {
   // Executando uma operação assíncrona em um isolate separado
-  final result = await "Marina Silva de Queiroz";
+  final result = await "Marina Silva";
   sendPort.send(result);
 }
