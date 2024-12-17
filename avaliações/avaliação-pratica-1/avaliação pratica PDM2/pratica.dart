@@ -1,5 +1,3 @@
-
-
 import 'dart:io';
 import 'package:sqlite3/sqlite3.dart';
 
@@ -9,7 +7,7 @@ void main() async {
   
   final db = sqlite3.openInMemory();
 
-  // Ceriar a tabela
+  // Ceriando a tabela
   db.execute('''
     CREATE TABLE TB_Estudantes (
       id INTEGER NOT NULL PRIMARY KEY,   
@@ -78,3 +76,4 @@ Future<void> excluirEstudante(Database db, int id) async {
     print('Registro excluído: id=$id');
   });
 }
+
